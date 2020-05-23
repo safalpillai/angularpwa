@@ -14,13 +14,14 @@ export interface IItem {
     providedIn: 'root'
 })
 export class ApiService {
-    private baseURL: string = "https://www.techiediaries.com/api/data.json";
+    private baseURL: string = 'https://www.techiediaries.com/api/data.json';
 
     constructor(
         private httpClient: HttpClient,
     ) { }
 
     fetch(): Observable<IItem[]> {
+        // eslint-disable-next-line keyword-spacing
         return <Observable<IItem[]>>this.httpClient.get(this.baseURL);
     }
 }

@@ -10,8 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
     declarations: [],
     imports: [
         CommonModule,
-        MatToolbarModule, 
-        MatCardModule, 
+        MatToolbarModule,
+        MatCardModule,
         MatButtonModule,
     ],
     exports: [
