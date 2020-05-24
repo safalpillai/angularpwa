@@ -40,9 +40,9 @@ export class RootComponent implements OnInit {
         });
     }
 
-    randomizeData(data: any[]): any[] {
+    randomizeData(data: IItem[]): IItem[] {
         const pushedIndexes: number[] = [];
-        const randomData: any[] = [];
+        const randomData: IItem[] = [];
         while (data?.length !== randomData?.length) {
             let random;
             if (data?.length === randomData?.length) break;
